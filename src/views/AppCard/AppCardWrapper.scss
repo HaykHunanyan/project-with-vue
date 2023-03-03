@@ -1,0 +1,116 @@
+.card {
+  width: 100%;
+  margin: 1rem 0rem 1rem 0rem;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: none;
+  > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    > h6 {
+      color: gray;
+      margin: 0px 0px 3px 5px;
+    }
+  }
+  > div:nth-child(2) {
+    color: gray;
+    border-bottom: 2px solid gray;
+    cursor: pointer;
+  }
+}
+.card-body {
+  display: grid;
+  grid-template-columns: 20vw auto;
+}
+.card_body_circle {
+  margin: 0px auto;
+  width: 160px;
+  .card-text {
+    font-size: 1em;
+    margin-top: 1em;
+    text-align: center;
+  }
+}
+.month_list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  > div {
+    width: 55px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .divider_count {
+      width: 100%;
+      height: 3px;
+      border-radius: 10px;
+      margin-top: 3px;
+    }
+  }
+}
+.items_list {
+  .item {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(171, 171, 171);
+    border-radius: 10px;
+    margin-top: 1rem;
+    padding: 1rem;
+    > div {
+      display: flex;
+      justify-content: space-between;
+    }
+    .status_text {
+      width: 10vw;
+      display: flex;
+      align-items: center;
+      svg {
+        position: relative;
+        margin-right: 0.5rem;
+        margin-bottom: 0rem;
+        rotate: none;
+      }
+      + svg {
+        position: relative;
+        color: rgb(177, 177, 177);
+        cursor: pointer;
+      }
+      // btn-group
+      + div {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+.dropdown-toggle {
+  border: none;
+  &::after {
+    display: none;
+  }
+  + .show {
+    height: 34px;
+    display: flex;
+    align-items: center;
+    left: -143px !important;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+      -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border: none;
+    > a {
+      color: rgb(244, 64, 64);
+      text-align: center;
+      padding: 0px;
+      &:hover {
+        background-color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}
